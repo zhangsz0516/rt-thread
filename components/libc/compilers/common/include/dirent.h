@@ -28,8 +28,9 @@ extern "C" {
 #define FT_USER         3   /* user defined */
 
 #define DT_UNKNOWN      0x00
-#define DT_REG          0x01
-#define DT_DIR          0x02
+#define DT_FIFO         0x01
+#define DT_DIR          0x04
+#define DT_REG          0x08
 
 #ifndef HAVE_DIR_STRUCTURE
 #define HAVE_DIR_STRUCTURE
