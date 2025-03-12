@@ -66,7 +66,7 @@ Hello RT-Thread!
 
 - 拷贝 musl gcc 工具链下的 libc.so 到 文件系统 `/lib/libc.so`
 
-- 为文件系统 `/lib/libc.so` 创建软链接， `sudo ln -s libc.so ld-musl-aarch64.so.1`
+- 为文件系统 `/lib/libc.so` 创建软链接， `sudo ln -s libc.so ld-musl-arm.so.1`
 
 - 复制 sdk 下的 `librtthread.so` 到 文件系统 `/lib/librtthread.so`
 
