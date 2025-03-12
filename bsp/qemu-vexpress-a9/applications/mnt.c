@@ -21,7 +21,7 @@ int mnt_init(void)
 {
     rt_thread_delay(RT_TICK_PER_SECOND);
 
-    if (dfs_mount("sd", "/", "elm", 0, 0) == 0)
+    if (dfs_mount("sd", "/", "ext", 0, 0) == 0)
     {
         LOG_I("file system initialization done!\n");
         return 0;
@@ -32,7 +32,7 @@ int mnt_init(void)
         LOG_W("[sd] Try to format and re-mount...");
         if (dfs_mkfs("elm", "sd") == 0)
         {
-            if (dfs_mount("sd", "/", "elm", 0, 0) == 0)
+            if (dfs_mount("sd", "/", "ext", 0, 0) == 0)
             {
                 LOG_I("[sd] File System on SD ('sd') initialized!");
                 return 0;
